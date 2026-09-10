@@ -19,6 +19,13 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit();
 }
 
+// ==========================================
+// CONFIGURATION: GOOGLE SHEET APPS SCRIPT URL
+// Replace with your Google Apps Script Web App URL
+// Example: https://script.google.com/macros/s/AKfycb.../exec
+// ==========================================
+$googleSheetUrl = ''; // Paste your Google Apps Script Web App URL here
+
 // Read raw JSON input
 $rawInput = file_get_contents('php://input');
 $data = json_decode($rawInput, true);
@@ -53,7 +60,7 @@ $orderRecord = [
     'ip_address' => $_SERVER['REMOTE_ADDR'] ?? '127.0.0.1'
 ];
 
-// Append to local orders log file
+// 1. Save to local orders.json file
 $ordersFile = __DIR__ . '/orders.json';
 $existingOrders = [];
 
@@ -64,6 +71,24 @@ if (file_exists($ordersFile)) {
 
 $existingOrders[] = $orderRecord;
 file_put_contents($ordersFile, json_encode($existingOrders, JSON_PRETTY_PRINT));
+
+// 2. Forward Order Data to Google Sheet (if URL is set)
+if (!empty($googleSheetUrl)) {
+    try {
+        $ch = curl_init($googleSheetUrl);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($orderRecord));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 5);
+        $sheetResponse = curl_exec($ch);
+        curl_close($ch);
+    } catch (Exception $e) {
+        // Silently log or handle Google Sheet sync error without breaking customer flow
+        error_log('Google Sheet Sync Error: ' . $e->getMessage());
+    }
+}
 
 // Return Success Response
 echo json_encode([
