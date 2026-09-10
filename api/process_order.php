@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 // Replace with your Google Apps Script Web App URL
 // Example: https://script.google.com/macros/s/AKfycb.../exec
 // ==========================================
-$googleSheetUrl = ''; // Paste your Google Apps Script Web App URL here
+$googleSheetUrl = 'https://script.google.com/macros/s/AKfycbyznaQ10HTWMMbFN51V1_8CIWwpTIG149j1Zn9TnOY9D-BuTkFhjdgSPfs2DiKBrh7s/exec';
 
 // Read raw JSON input
 $rawInput = file_get_contents('php://input');
