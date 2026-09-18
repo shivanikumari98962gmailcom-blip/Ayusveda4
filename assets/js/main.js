@@ -161,7 +161,7 @@ function handleFormSubmit(e) {
       window.location.href = `thankyou.php?order_id=${data.order_id}&name=${encodeURIComponent(data.name)}&phone=${encodeURIComponent(data.phone)}&address=${encodeURIComponent(data.address)}`;
     } else {
       alert('ऑर्डर दर्ज करने में समस्या आई। कृपया पुनः प्रयास करें।');
-      if (submitBtnText) submitBtnText.textContent = '⚡ अभी ऑर्डर करें (CASH ON DELIVERY)';
+      if (submitBtnText) submitBtnText.textContent = '⚡ अभी ऑर्डर करें';
       if (submitBtnSpinner) submitBtnSpinner.classList.add('hidden');
       if (submitBtn) submitBtn.disabled = false;
     }
