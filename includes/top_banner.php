@@ -14,7 +14,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
         </svg>
         <span>
-          🔥 <strong class="text-amber-300 underline uppercase font-sans">SPECIAL OFFER:</strong> ऑनलाइन ऑर्डर करने पर पायें <span class="text-amber-300 font-black text-sm sm:text-lg">10-15% की भारी छूट!</span>
+          🔥 <strong class="text-amber-300 underline uppercase font-sans">SPECIAL OFFER:</strong> ऑनलाइन पेमेंट (Online Payment) करने पर पायें <span class="text-amber-300 font-black text-sm sm:text-lg">FLAT 15% की भारी छूट!</span>
         </span>
       </div>
     </div>
@@ -24,7 +24,7 @@
       onclick="scrollToOrderForm()"
       class="flex-shrink-0 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs sm:text-sm py-1.5 px-3 sm:px-4 rounded-full shadow-lg uppercase tracking-wider font-sans flex items-center space-x-1 transition-transform transform hover:scale-105 active:scale-95 cursor-pointer whitespace-nowrap border border-amber-200"
     >
-      <span>छूट प्राप्त करें</span>
+      <span>15% छूट पाएं</span>
       <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
       </svg>

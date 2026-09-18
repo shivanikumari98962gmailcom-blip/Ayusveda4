@@ -16,6 +16,14 @@
       <p class="text-xs text-slate-600 font-hindi mt-1">
         फॉर्म भरें और ऑर्डर कम्फर्म करने के लिए सबमिट करें
       </p>
+
+      <!-- Online Payment 15% Discount Notice Badge -->
+      <div class="mt-3 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-400 border-2 border-amber-500 p-2.5 rounded-2xl text-center shadow-md">
+        <p class="text-xs sm:text-sm font-black text-slate-950 font-hindi flex items-center justify-center space-x-1">
+          <span>💳</span>
+          <span>ऑनलाइन पेमेंट पर पाएं <strong class="text-red-700 font-extrabold text-sm sm:text-base underline">FLAT 15% डिस्काउंट!</strong></span>
+        </p>
+      </div>
     </div>
 
     <!-- Form Element -->

@@ -37,15 +37,15 @@
 
     <!-- Main Offer Title -->
     <h3 class="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight font-sans uppercase">
-      ऑनलाइन ऑर्डर पर पाएं <br />
+      ऑनलाइन पेमेंट करने पर पाएं <br />
       <span class="text-blue-700 drop-shadow-sm">
-        10-15% की विशेष छूट!
+        FLAT 15% की विशेष छूट!
       </span>
     </h3>
 
     <!-- Hindi Subtitle -->
     <p class="mt-3 text-sm sm:text-base text-slate-600 font-hindi leading-relaxed">
-      केवल आज ही वेबसाइट से ऑनलाइन ऑर्डर करने पर पायें <strong class="text-red-600 font-bold">FLAT 15% डिस्काउंट</strong> और मुफ्त डिलीवरी (Free Delivery)!
+      केवल आज ही ऑनलाइन पेमेंट (Online Payment) करने पर पायें <strong class="text-red-600 font-bold">FLAT 15% डिस्काउंट</strong> और मुफ्त डिलीवरी (Free Delivery)!
     </p>
 
     <!-- Countdown Box -->

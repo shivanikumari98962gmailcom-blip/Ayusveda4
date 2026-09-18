@@ -100,6 +100,14 @@ const OrderForm = forwardRef(({ id }, ref) => {
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             
+            {/* Online Payment 15% Discount Notice Badge */}
+            <div className="bg-gradient-to-r from-amber-400 via-amber-300 to-amber-400 border-2 border-amber-500 p-2.5 rounded-2xl text-center shadow-md">
+              <p className="text-xs sm:text-sm font-black text-slate-950 font-hindi flex items-center justify-center space-x-1">
+                <span>💳</span>
+                <span>ऑनलाइन पेमेंट पर पाएं <strong className="text-red-700 font-extrabold text-sm sm:text-base underline">FLAT 15% डिस्काउंट!</strong></span>
+              </p>
+            </div>
+            
             {/* Field 1: Full Name Input */}
             <div>
               <label className="block text-sm sm:text-base font-bold text-slate-800 mb-1 font-sans">
