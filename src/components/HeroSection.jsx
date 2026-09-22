@@ -21,23 +21,7 @@ export default function HeroSection({ orderFormRef }) {
         }}
       ></div>
 
-      <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-8 relative z-10">
-        
-        {/* Top Header Row: CALL US NOW Box Top Right */}
-        <div className="flex justify-end mb-4 sm:mb-6">
-          <a 
-            href="tel:9925015492" 
-            className="flex items-center space-x-0 border-2 border-blue-600 rounded-lg overflow-hidden bg-white shadow-lg hover:opacity-95 transition-opacity"
-          >
-            <div className="bg-red-600 text-white font-black text-xs sm:text-sm px-3.5 sm:px-4 py-2 uppercase font-sans tracking-wider flex items-center space-x-1.5">
-              <PhoneCall className="w-4 h-4" />
-              <span>CALL US NOW</span>
-            </div>
-            <div className="bg-white text-blue-700 font-black text-base sm:text-2xl px-3.5 sm:px-4 py-1.5 font-mono tracking-wider">
-              9925015492
-            </div>
-          </a>
-        </div>
+      <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-8 relative z-10 pt-4">
 
         {/* Main Title Block */}
         <div className="text-left mb-4 sm:mb-6">
